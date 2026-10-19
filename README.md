@@ -97,3 +97,9 @@ event-booking-system/
 ## Project Status
 
 Build 1: Domain Core.
+
+## Future Improvements
+
+- Add more automated tests for edge cases.
+- Improve waitlist handling when ticket tiers are unavailable.
+- Add booking cancellation and waitlist scenarios to the demo.
