@@ -1,0 +1,14 @@
+{
+  "name": "event-booking-system",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+    "demo": "node scripts/demo.js",
+    "benchmark": "node scripts/benchmark.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
