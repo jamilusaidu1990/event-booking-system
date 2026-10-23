@@ -3,13 +3,16 @@ const { Waitlist } = require("./waitlist");
 const { AppError } = require("../utils/errors");
 
 class Event {
-    constructor(name, capacity) {
+    constructor(name, capacity, details = {}) {
         if (!name || !Number.isInteger(capacity) || capacity < 1) {
             throw new AppError("Event needs a name and positive capacity");
         }
 
         this.name = name;
         this.capacity = capacity;
+        this.city = details.city || "";
+        this.date = details.date || "";
+        this.description = details.description || "";
         this.ticketTiers = new Map();
         this.bookings = new Map();
         this.waitlist = new Waitlist();
